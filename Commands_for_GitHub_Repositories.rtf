@@ -1,0 +1,60 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue255;\red85\green142\blue40;}
+{\*\expandedcolortbl;\csgray\c100000;\csgenericrgb\c0\c0\c100000;\csgenericrgb\c33333\c55686\c15686;}
+\margl1440\margr1440\vieww13160\viewh16060\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf2 Commands for GitHub Repositories\
+
+\b0 \cf0 \
+\
+\
+
+\b To connect to a new Github repo for the first time:\
+\
+
+\b0 1)  In Terminal, cd into the folder that you want to be synced with the GitHub repo.\
+\
+3)  In Terminal, type in the commands:\
+\cf3 	git init\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 2)  Put everything that you want to put in the GitHub repository in that folder on your local machine.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 4)  On your GitHub account, go to your list of repositories, create a new one, then copy the HTTPS link to that new repository.\
+\
+5)  In Terminal, type in the commands:\
+\cf3 	git remote add origin 
+\i remote repository URL
+\i0 \
+	git remote -v\
+\cf0 		(this just verifies that you can remotely fetch from and push to that repository)\
+\cf3 	git add .\
+\cf0 		(the \'91.\'92 tells GitHub that you\'92re going to add every file that\'92s in your folder to your GitHub repository)\
+\cf3 	git commit -m \'91first commit\'92\
+\cf0 		(make sure to ALWAYS add a comment on your commits)\
+		(should show the list of new files you\'92re adding to the remote repo)\
+\cf3 	git push -u origin master\
+\cf0 		(pushes the changes to your local repo up to the remote repo you specified as the origin)\
+\cf3 	git status\
+\cf0 		(checking to make sure everything is up to date)\
+\
+6)  Refresh the repository in GitHub to make sure that the files are updated there and that the push was successful\
+\
+\
+\
+
+\b Pushing new files/ changes to a GitHub repo you\'92re already connected to:\
+
+\b0 \
+1)  In Terminal, type in the commands\
+	\cf3 git add .\
+	git commit -m \'91updating files\'92\
+\cf0 		(ALWAYS add a comment on commits)\
+	\cf3 git push -u origin master\
+	git status\
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 2)  Refresh the repository in GitHub to make sure that the files are updated there and that the push was successful}
